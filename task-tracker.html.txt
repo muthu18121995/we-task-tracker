@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Management Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f4f4f4;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: #fff;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #333;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    .status-completed {
+      background-color: #d4edda;
+    }
+    .status-in-progress {
+      background-color: #fff3cd;
+    }
+    .status-not-started {
+      background-color: #f8d7da;
+    }
+  </style>
+</head>
+<body>
+  <h1>Task Management Tracker</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Task ID</th>
+        <th>Task Name</th>
+        <th>Description</th>
+        <th>Assigned To</th>
+        <th>Priority</th>
+        <th>Status</th>
+        <th>Start Date</th>
+        <th>Due Date</th>
+        <th>Completed Date</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="status-in-progress">
+        <td>001</td>
+        <td>Website Redesign</td>
+        <td>Update homepage layout</td>
+        <td>John</td>
+        <td>High</td>
+        <td>In Progress</td>
+        <td>2025-07-20</td>
+        <td>2025-07-31</td>
+        <td></td>
+        <td>Waiting on assets</td>
+      </tr>
+      <tr class="status-completed">
+        <td>002</td>
+        <td>Client Meeting</td>
+        <td>Monthly catch-up</td>
+        <td>Sarah</td>
+        <td>Medium</td>
+        <td>Completed</td>
+        <td>2025-07-15</td>
+        <td>2025-07-17</td>
+        <td>2025-07-17</td>
+        <td>Successful meeting</td>
+      </tr>
+      <tr class="status-not-started">
+        <td>003</td>
+        <td>Budget Approval</td>
+        <td>Get budget signed off</td>
+        <td>Manager</td>
+        <td>High</td>
+        <td>Not Started</td>
+        <td>2025-07-18</td>
+        <td>2025-07-22</td>
+        <td></td>
+        <td>Need to follow up</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
